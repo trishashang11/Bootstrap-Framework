@@ -1,0 +1,35 @@
+// .container {
+//     border: 1px solid red;
+// }
+header{
+    border-bottom: 1px solid lightgray;
+}
+.custom-menu{
+    display: flex;
+    justify-content: flex-end;
+    a {
+        position: relative;
+    }
+  a:hover:after{
+      content: "";
+      width: 100%;
+      border-bottom: 4px solid orangered;
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+  }
+  li:last-child{
+      img{
+      border-radius: 50px;
+      }
+  }
+}
+.custom-item{
+    &-btm{
+        border-radius: 30px;
+        padding-left:10px;
+    }
+}
+.nav-menu{
+    border-right: 1px solid lightgray;
+}

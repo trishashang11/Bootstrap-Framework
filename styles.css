@@ -1,0 +1,39 @@
+header {
+  border-bottom: 1px solid lightgray;
+}
+
+.custom-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.custom-menu a {
+  position: relative;
+}
+
+.custom-menu a:hover:after {
+  content: "";
+  width: 100%;
+  border-bottom: 4px solid orangered;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+}
+
+.custom-menu li:last-child img {
+  border-radius: 50px;
+}
+
+.custom-item-btm {
+  border-radius: 30px;
+  padding-left: 10px;
+}
+
+.nav-menu {
+  border-right: 1px solid lightgray;
+}
+/*# sourceMappingURL=styles.css.map */
