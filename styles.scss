@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 $b1:#2E4765;
 $b2:#172433;
 $bl:#FFFFFF;
@@ -146,6 +149,8 @@ $redpink:#dc143c;
       position: relative;
       left: 80px;
     color: $b1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;
       &::before{
           content: '"';
           font-size: 36pt;
@@ -162,10 +167,12 @@ $redpink:#dc143c;
     }
     span{
         color:orangered;
-        font-size: 15pt;
+        font-size: 18pt;
+        font-weight: bolder;
         display: block;
         text-align: right;
-        margin-right: 130px;
+        margin: 16px 130px 0;
+        font-family: 'Roboto', sans-serif;
     }
   }
  
@@ -240,6 +247,7 @@ $redpink:#dc143c;
   .men-gallery1-card{
       border-radius: 20px;
       border: 1px solid lightgray;
+      height: 350px;
       img{
           width: 100%;
           height: 230px;
@@ -250,13 +258,15 @@ $redpink:#dc143c;
   .t1{
       display: flex;
       justify-content: space-between;
-      padding: 10px 10px 3px 10px;
+      padding: 8px 10px 3px;
       color: $redpink;
+      margin: 5px 0;
   }
   .t2{
       display: flex;
       padding: 0 10px;
-
+        margin-bottom: 10px;
+       
       &-str{
           color:$orangered;
 
@@ -272,7 +282,20 @@ $redpink:#dc143c;
     display: flex;
     justify-content: space-between;
     padding: 0 10px 5px 10px;
+
+}
+.cntry{
+    span{
+        margin-right: 10px;
+        background-color:  #EFF3F3;
+        padding: 5px 15px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
 }
 .popular{
     margin: 20px 0;
+}
+.gal-botm{
+    margin-bottom: 100px;
 }

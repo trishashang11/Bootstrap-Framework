@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 .wrapper {
   border: 1px solid red;
   padding: 0 60px;
@@ -165,6 +166,8 @@
   position: relative;
   left: 80px;
   color: #2E4765;
+  font-family: 'Roboto', sans-serif;
+  font-size: 46px;
 }
 
 .sec-banner-slogan-h2::before {
@@ -184,10 +187,12 @@
 
 .sec-banner-slogan-h2 span {
   color: orangered;
-  font-size: 15pt;
+  font-size: 18pt;
+  font-weight: bolder;
   display: block;
   text-align: right;
-  margin-right: 130px;
+  margin: 16px 130px 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sec-meal-search--searchbtn--icon {
@@ -269,6 +274,7 @@
 .men-gallery1-card {
   border-radius: 20px;
   border: 1px solid lightgray;
+  height: 350px;
 }
 
 .men-gallery1-card img {
@@ -285,8 +291,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 10px 3px 10px;
+  padding: 8px 10px 3px;
   color: #dc143c;
+  margin: 5px 0;
 }
 
 .t2 {
@@ -294,6 +301,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 
 .t2-str {
@@ -315,7 +323,19 @@
   padding: 0 10px 5px 10px;
 }
 
+.cntry span {
+  margin-right: 10px;
+  background-color: #EFF3F3;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
 .popular {
   margin: 20px 0;
+}
+
+.gal-botm {
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=styles.css.map */
