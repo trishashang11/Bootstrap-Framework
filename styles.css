@@ -31,10 +31,6 @@
   position: relative;
 }
 
-.head-top-container-2 a:hover {
-  color: #2E4765;
-}
-
 .head-top-container-2 a:hover:after {
   content: "";
   width: 100%;
@@ -66,13 +62,23 @@
   padding: 35px;
 }
 
+.dlbutns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 467px;
+}
+
 .sec-banner-background {
   background-image: url("./10882/10882.png");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
   border: 1px solid green;
-  padding: 58px 46px;
+  padding: 34px 46px;
 }
 
 .sec-banner-background--text {
@@ -83,15 +89,53 @@
 .sec-banner-background--applebtn {
   background-color: #dc143c;
   color: white;
+  padding: 8px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 220px;
+  height: 71px;
+}
+
+.sec-banner-background--applebtn:hover {
+  color: white;
 }
 
 .sec-banner-background--applebtn--i {
-  font-size: 18pt;
+  font-size: 40pt;
+  margin-right: 10px;
+}
+
+.sec-banner-background--applebtn span {
+  display: block;
+  font-size: 15pt;
+  text-align: left;
 }
 
 .sec-banner-background--googlebtn {
   background-color: red;
   color: white;
+  padding: 8px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 220px;
+  height: 71px;
+}
+
+.sec-banner-background--googlebtn:hover {
+  color: white;
+}
+
+.sec-banner-background--googlebtn--i {
+  font-size: 40pt;
+  margin-right: 10px;
+}
+
+.sec-banner-background--googlebtn span {
+  display: block;
+  font-size: 15pt;
+  text-align: left;
 }
 
 .sec-meal-search {
@@ -101,7 +145,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: lightgray;
+  background-color: #EFF3F3;
   margin: 3px 0;
   height: 45px;
   border-radius: 20px;
@@ -111,6 +155,10 @@
   background-color: transparent;
   border: none;
   width: 100%;
+}
+
+.sec-meal-search--searchbtn:focus {
+  outline: none;
 }
 
 .sec-banner-slogan-h2 {
@@ -188,7 +236,7 @@
 }
 
 .butn {
-  background-color: lightgray;
+  background-color: #EFF3F3;
   border-radius: 20px;
   padding: 10px 20px;
   margin-right: 25px;
@@ -196,6 +244,10 @@
 
 .butn:hover {
   background-color: orangered;
+  color: white;
+}
+
+.sec-meal-settings--seticon:hover {
   color: white;
 }
 
@@ -250,6 +302,7 @@
 
 .t2-str i:last-child {
   opacity: 24%;
+  margin-right: 15px;
 }
 
 .t3 {

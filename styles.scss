@@ -30,9 +30,7 @@ $redpink:#dc143c;
     }
        a {
         position: relative;
-        &:hover{
-            color: $b1;
-        }
+       
         &:hover:after{
             content: "";
             width: 100%;
@@ -61,13 +59,19 @@ $redpink:#dc143c;
     width: 100%;
     padding: 35px;
   }
+  .dlbutns{
+      display: flex;
+      justify-content: space-between;
+      width: 467px;
+    //   border: 1px solid red;
+  }
   .sec-banner-background{
      background-image: url("./10882/10882.png");
      background-size: cover;
      background-repeat: no-repeat;
      border-radius: 10px;
      border:1px solid green;
-     padding: 58px 46px;
+     padding: 34px 46px;
      &--text{
          color: white;
          font-size: 36pt;
@@ -75,28 +79,66 @@ $redpink:#dc143c;
      &--applebtn{
          background-color:#dc143c;
          color: white;
+         padding: 8px 15px;
+         display: flex;
+         width: 220px;
+         height: 71px;
+
+         &:hover{
+             color: white;
+         }
          &--i{
-             font-size: 18pt;
+             font-size: 40pt;
+             margin-right: 10px;
+         }
+         span{
+             display: block;
+             font-size: 15pt;
+             text-align: left;
          }
      }
      &--googlebtn{
         background-color:red;
         color: white;
+        padding: 8px 15px;
+        display: flex;
+        width: 220px;
+        height: 71px;
+
+        &:hover{
+            color: white;
+        }
+        &--i{
+            font-size: 40pt;
+            margin-right: 10px;
+        }
+        span{
+            display: block;
+            font-size: 15pt;
+            text-align: left;
+        }
     }
   }
+ 
   .sec-meal-search{
     //   border: 1px solid red;
     display: flex;
     justify-content: flex-end;
-    background-color: lightgray;
+    background-color: #EFF3F3;
     margin: 3px 0;
     height: 45px;
     border-radius: 20px;
+    
     
     &--searchbtn{
         background-color: transparent;
         border: none;
         width: 100%;
+
+        
+        &:focus{
+            outline: none;
+        }
     }
    
   }
@@ -163,7 +205,7 @@ $redpink:#dc143c;
      
  }
  .butn{
-     background-color: lightgray;
+     background-color: #EFF3F3;
      border-radius: 20px;
      padding: 10px 20px;
      
@@ -173,14 +215,19 @@ $redpink:#dc143c;
          color: white;
      }
  }
+ .sec-meal-settings--seticon{
+     &:hover{
+         color: white;
+     }
+ }
   .sec-meal{
       margin: 20px 0;
       padding: 11px 0;
       height: 75px;  
       
      &-settings{
+
       button{
-          
           background-color: orangered;
           width: 50px;
           height: 50px;
@@ -215,6 +262,7 @@ $redpink:#dc143c;
 
           i:last-child{
             opacity: 24%;
+            margin-right: 15px;
           }
       }
       
