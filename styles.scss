@@ -1,11 +1,12 @@
 $b1:#2E4765;
 $b2:#172433;
 $bl:#FFFFFF;
-$lg:#93EF00;
-$orangered: orangered;
-.line{
-    border: 1px solid blue;
-}
+$orangered: #ff4500;
+$redpink:#dc143c;
+
+// .line{
+//     border: 1px solid blue;
+// }
 .wrapper{
     border: 1px solid red;
     padding: 0 60px;
@@ -18,15 +19,20 @@ $orangered: orangered;
         color: $orangered;
     }
 }
+
 .head-top-container-2{
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid lightgray;
+  
     img{
         border-radius: 100%;
     }
-    a {
+       a {
         position: relative;
+        &:hover{
+            color: $b1;
+        }
         &:hover:after{
             content: "";
             width: 100%;
@@ -67,7 +73,7 @@ $orangered: orangered;
          font-size: 36pt;
      }
      &--applebtn{
-         background-color:crimson;
+         background-color:#dc143c;
          color: white;
          &--i{
              font-size: 18pt;
@@ -78,13 +84,84 @@ $orangered: orangered;
         color: white;
     }
   }
+  .sec-meal-search{
+    //   border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+    background-color: lightgray;
+    margin: 3px 0;
+    height: 45px;
+    border-radius: 20px;
+    
+    &--searchbtn{
+        background-color: transparent;
+        border: none;
+        width: 100%;
+    }
+   
+  }
+  .sec-banner-slogan-h2{
+      position: relative;
+      left: 80px;
+    color: $b1;
+      &::before{
+          content: '"';
+          font-size: 36pt;
+          position: absolute;
+          left:-55px;
+
+      }
+      &::after{
+        content: '"';
+        font-size: 36pt;
+        position: absolute;
+        right: 110px;
+        bottom: 10px;
+    }
+    span{
+        color:orangered;
+        font-size: 15pt;
+        display: block;
+        text-align: right;
+        margin-right: 130px;
+    }
+  }
+ 
+  .sec-meal-search--searchbtn--icon{
+      font-size: 18pt;
+      margin: 10px;
+  }
+ .sec-meal-title{
+     margin: 10px 0;
+ }
+ .cat-meal{
+     margin: 10px 0;
+     padding: 15px 0;
+     
+ }
+ .butn{
+     display: flex;
+     justify-content: flex-start;
+     background-color: lightgray;
+     border-radius: 20px;
+     padding: 10px 20px;
+     width: auto;
+     text-align: center;
+    width: 180px;
+
+     &:hover{
+         background-color: orangered;
+         color: white;
+     }
+ }
   .sec-meal{
       margin: 20px 0;
+      padding: 11px 0;
       height: 75px;  
       
      &-settings{
       button{
-          margin: 11px 0;
+          
           background-color: orangered;
           width: 50px;
           height: 50px;
@@ -96,8 +173,10 @@ $orangered: orangered;
   }
   .men-gallery1-card{
       border-radius: 20px;
+      border: 1px solid lightgray;
       img{
           width: 100%;
+          height: 230px;
           border-top-left-radius: 20px;
           border-top-right-radius: 20px;
       }
