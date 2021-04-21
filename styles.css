@@ -151,24 +151,33 @@
   margin: 10px 0;
 }
 
+.sec-meal-title-h3 {
+  color: #dc143c;
+}
+
+.popular h3 {
+  color: #dc143c;
+}
+
 .cat-meal {
   margin: 10px 0;
   padding: 15px 0;
-}
-
-.butn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.butn {
   background-color: lightgray;
   border-radius: 20px;
   padding: 10px 20px;
-  width: auto;
-  text-align: center;
-  width: 180px;
+  margin-right: 25px;
 }
 
 .butn:hover {
@@ -211,6 +220,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 10px 3px 10px;
+  color: #dc143c;
 }
 
 .t2 {
@@ -218,6 +228,10 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0 10px;
+}
+
+.t2-str {
+  color: #ff4500;
 }
 
 .t3 {

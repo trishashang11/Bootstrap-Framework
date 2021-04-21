@@ -1,0 +1,29 @@
+@media (max-width: 800px) {
+    
+    .cat-meal{
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .butn{
+      width: 100%;
+        margin: 10px 0;
+    }
+} 
+
+@media (max-width: 500px) {
+    .cat-meal{
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .butn{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .men-gallery1-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

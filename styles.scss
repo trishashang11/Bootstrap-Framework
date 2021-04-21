@@ -133,22 +133,30 @@ $redpink:#dc143c;
   }
  .sec-meal-title{
      margin: 10px 0;
+
+     &-h3{
+         color: $redpink;
+     }
+ }
+ .popular{
+     h3{
+         color: $redpink;
+     }
  }
  .cat-meal{
      margin: 10px 0;
      padding: 15px 0;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
      
  }
  .butn{
-     display: flex;
-     justify-content: flex-start;
      background-color: lightgray;
      border-radius: 20px;
      padding: 10px 20px;
-     width: auto;
-     text-align: center;
-    width: 180px;
-
+     
+     margin-right: 25px;
      &:hover{
          background-color: orangered;
          color: white;
@@ -185,10 +193,15 @@ $redpink:#dc143c;
       display: flex;
       justify-content: space-between;
       padding: 10px 10px 3px 10px;
+      color: $redpink;
   }
   .t2{
       display: flex;
       padding: 0 10px;
+
+      &-str{
+          color:$orangered;
+      }
       
   }
   .t3{
