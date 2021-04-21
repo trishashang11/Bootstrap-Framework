@@ -139,6 +139,17 @@ $redpink:#dc143c;
      }
  }
  .popular{
+     position: relative;
+
+     &:after{
+          content: '';
+         position: absolute;
+         height: 2px;
+         right: 0;
+         width: 90%;
+         top: 45%;
+         background-color:lightgray;
+     }
      h3{
          color: $redpink;
      }
@@ -201,7 +212,12 @@ $redpink:#dc143c;
 
       &-str{
           color:$orangered;
+
+          i:last-child{
+            opacity: 24%;
+          }
       }
+      
       
   }
   .t3{
