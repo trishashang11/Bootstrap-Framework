@@ -1,39 +1,152 @@
-header {
-  border-bottom: 1px solid lightgray;
+.line {
+  border: 1px solid blue;
 }
 
-.custom-menu {
+.wrapper {
+  border: 1px solid red;
+  padding: 0 60px;
+}
+
+.head-top-container-1 {
+  border-bottom: 1px solid lightgray;
+  padding: 13px 10px;
+}
+
+.head-top-container-1--logo {
+  text-align: center;
+  color: orangered;
+}
+
+.head-top-container-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  border-bottom: 1px solid lightgray;
 }
 
-.custom-menu a {
+.head-top-container-2 img {
+  border-radius: 100%;
+}
+
+.head-top-container-2 a {
   position: relative;
 }
 
-.custom-menu a:hover:after {
+.head-top-container-2 a:hover:after {
   content: "";
   width: 100%;
   border-bottom: 4px solid orangered;
   position: absolute;
-  bottom: -16px;
+  bottom: -17px;
   left: 0;
 }
 
-.custom-menu li:last-child img {
-  border-radius: 50px;
+.head-top-container-3 {
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  padding: 13.5px 20px;
 }
 
-.custom-item-btm {
-  border-radius: 30px;
-  padding-left: 10px;
+.head-top-container-3 button {
+  background-color: orangered;
+  border: none;
+  border-radius: 20px;
+  color: white;
 }
 
-.nav-menu {
-  border-right: 1px solid lightgray;
+.head-top-container-3 button:hover {
+  color: white;
+}
+
+.sec-banner-slogan {
+  width: 100%;
+  padding: 35px;
+}
+
+.sec-banner-background {
+  background-image: url("./10882/10882.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 1px solid green;
+  padding: 58px 46px;
+}
+
+.sec-banner-background--text {
+  color: white;
+  font-size: 36pt;
+}
+
+.sec-banner-background--applebtn {
+  background-color: crimson;
+  color: white;
+}
+
+.sec-banner-background--applebtn--i {
+  font-size: 18pt;
+}
+
+.sec-banner-background--googlebtn {
+  background-color: red;
+  color: white;
+}
+
+.sec-meal {
+  margin: 20px 0;
+  height: 75px;
+}
+
+.sec-meal-settings button {
+  margin: 11px 0;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  font-size: 18pt;
+}
+
+.men-gallery1-card {
+  border-radius: 20px;
+}
+
+.men-gallery1-card img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.t1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10px 3px 10px;
+}
+
+.t2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px;
+}
+
+.t3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px 5px 10px;
+}
+
+.popular {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=styles.css.map */

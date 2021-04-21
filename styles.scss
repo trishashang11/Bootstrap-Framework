@@ -1,35 +1,122 @@
-// .container {
-//     border: 1px solid red;
-// }
-header{
-    border-bottom: 1px solid lightgray;
+$b1:#2E4765;
+$b2:#172433;
+$bl:#FFFFFF;
+$lg:#93EF00;
+$orangered: orangered;
+.line{
+    border: 1px solid blue;
 }
-.custom-menu{
+.wrapper{
+    border: 1px solid red;
+    padding: 0 60px;
+}
+.head-top-container-1{
+    border-bottom: 1px solid lightgray;
+    padding:13px 10px;
+    &--logo{
+        text-align: center;
+        color: $orangered;
+    }
+}
+.head-top-container-2{
     display: flex;
     justify-content: flex-end;
+    border-bottom: 1px solid lightgray;
+    img{
+        border-radius: 100%;
+    }
     a {
         position: relative;
+        &:hover:after{
+            content: "";
+            width: 100%;
+            border-bottom: 4px solid orangered;
+            position: absolute;
+            bottom: -17px;
+            left: 0;
+        }
     }
-  a:hover:after{
-      content: "";
-      width: 100%;
-      border-bottom: 4px solid orangered;
-      position: absolute;
-      bottom: -16px;
-      left: 0;
+}
+.head-top-container-3{
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    padding:13.5px 20px;
+    button{
+        background-color: orangered;
+        border:none;
+        border-radius: 20px;
+        color: white;
+        &:hover{
+            color: white;
+        }
+    }
+}
+.sec-banner-slogan{
+    width: 100%;
+    padding: 35px;
   }
-  li:last-child{
+  .sec-banner-background{
+     background-image: url("./10882/10882.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+     border:1px solid green;
+     padding: 58px 46px;
+     &--text{
+         color: white;
+         font-size: 36pt;
+     }
+     &--applebtn{
+         background-color:crimson;
+         color: white;
+         &--i{
+             font-size: 18pt;
+         }
+     }
+     &--googlebtn{
+        background-color:red;
+        color: white;
+    }
+  }
+  .sec-meal{
+      margin: 20px 0;
+      height: 75px;  
+      
+     &-settings{
+      button{
+          margin: 11px 0;
+          background-color: orangered;
+          width: 50px;
+          height: 50px;
+          border-radius: 25px;
+          color: white;
+          font-size: 18pt;
+      }
+     }
+  }
+  .men-gallery1-card{
+      border-radius: 20px;
       img{
-      border-radius: 50px;
+          width: 100%;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
       }
   }
+  .t1{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10px 3px 10px;
+  }
+  .t2{
+      display: flex;
+      padding: 0 10px;
+      
+  }
+  .t3{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 5px 10px;
 }
-.custom-item{
-    &-btm{
-        border-radius: 30px;
-        padding-left:10px;
-    }
-}
-.nav-menu{
-    border-right: 1px solid lightgray;
+.popular{
+    margin: 20px 0;
 }
