@@ -1,61 +1,73 @@
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+    li:nth-child(6)::after{
+           display: none;     
+        }
+    .sec-slogan{
+       text-align: center;
+       padding: 28px 10px;
+    }
+    .sec-slogan-name{
+        text-align: center;
+    }
+    .sec-slogan-h3{
+        padding: 0 20px;
+    }
+    .sec-slogan-h3::before{
+        position: static;
     
-    .cat-meal{
+    }
+    .sec-slogan-h3::after{
+        position: static;
+        
+    }
+    
+    }
+       
+@media (max-width: 991px) {
+   
+    .sec-banner{
+        background-size:auto;
+        height: auto;
+    }
+}
+@media (max-width: 600px) {
+   
+   .wrapper{
+       width: 100%;
+       margin: 0 auto;
+       overflow-x: hidden;
+   }
+   .sec-banner{
+       background-size: cover;
+       height: auto;
+   }
+   .sec-banner-butn-apple{
+       margin: 10px auto;
+   }
+   .sec-banner-text--text1{
+       text-align: center;
+   }
+   .sec-banner-butn{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       margin: auto;
+   }
+}
+@media (max-width: 420px) {
+   
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .sec-banner-text--text1{
+        text-align: center;
+    }
+    .sec-banner-butn{
         display: flex;
         flex-direction: column;
-        /* width: 100%; */
-    }
-    .butn{
-      width: 100%;
-        margin: 10px auto;
-    }
-    .popular:after{
-        right: 125px;
-    }
-  
-} 
-
-@media (max-width: 500px) {
-   
-    .men-gallery1{
-        display:block;
         width: 100%;
+        margin: auto;
     }
-    .popular::after{
-        right: 0;
-        width: 76%;
-    } 
-   .head-top-container-3{
-       text-align: right;
-       border: none;
-   }
-   .head-top-container-1{
-       border: none;
-   }
-   .head-top-container-2{
-    border: none;
-}
-   
-}
-@media (min-width: 375px) {
-   
-    /* .men-gallery1{
-        display:block;
-        width: 100%;
-    }
-    .popular::after{
-        right: 0;
-        width: 76%;
-    }  */
-   .head-top-container-3{
-       text-align: right;
-       border: none;
-   }
-   .head-top-container-1{
-       border: none;
-   }
-   .head-top-container-2{
-    border: none;
-}
-   
-}
+ } 

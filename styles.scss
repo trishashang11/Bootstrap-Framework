@@ -1,301 +1,348 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-$b1:#2E4765;
-$b2:#172433;
-$bl:#FFFFFF;
-$orangered: #ff4500;
-$redpink:#dc143c;
+$or:#EF4C00;
+$lb:#2E4765;
+$mar:#B30733;
+$lg:#d3d3d3;
+$w:#ffff;
 
-// .line{
-//     border: 1px solid blue;
-// }
 .wrapper{
-    border: 1px solid red;
-    padding: 0 60px;
+    margin-bottom: 30px;
+    overflow-x: hidden;
 }
-.head-top-container-1{
-    border-bottom: 1px solid lightgray;
-    padding:13px 10px;
-    &--logo{
-        text-align: center;
-        color: $orangered;
-    }
-}
-
-.head-top-container-2{
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid lightgray;
-  
-    img{
-        border-radius: 100%;
-    }
-       a {
+li{
+    a{
+        color: $lb!important;
         position: relative;
-       
-        &:hover:after{
-            content: "";
-            width: 100%;
-            border-bottom: 4px solid orangered;
-            position: absolute;
-            bottom: -17px;
-            left: 0;
+           
+            &:hover:after{
+                content: "";
+                width: 100%;
+                border-bottom: 4px solid orangered;
+                position: absolute;
+                bottom: -22px;
+                left: 0;
+
+                
+            }
+          
+        }
+    }
+li:nth-child(6){
+    position: relative;
+
+    &::after{
+        content: '';
+        width: 2px;
+        height: 114%;
+        position: absolute;
+        top: -9px;
+        right: -30px;
+        background-color: $lg;        
+    }
+   
+}
+li:last-child{
+    a{
+        &:hover::after{
+        border-bottom: none;
         }
     }
 }
-.head-top-container-3{
-    border-bottom: 1px solid lightgray;
-    border-left: 1px solid lightgray;
-    padding:13.5px 20px;
-    button{
-        background-color: orangered;
-        border:none;
-        border-radius: 20px;
-        color: white;
-        &:hover{
-            color: white;
-        }
-    }
+
+.br-butm{
+    border-bottom: 2px solid $lg;
 }
-.sec-banner-slogan{
-    width: 100%;
-    padding: 35px;
-  }
-  .dlbutns{
-      display: flex;
-      justify-content: space-between;
-      width: 467px;
-    //   border: 1px solid red;
-  }
-  .sec-banner-background{
-     background-image: url("./10882/10882.png");
-     background-size: cover;
-     background-repeat: no-repeat;
-     border-radius: 10px;
-     border:1px solid green;
-     padding: 34px 46px;
-     &--text{
-         color: white;
-         font-size: 36pt;
-     }
-     &--applebtn{
-         background-color:#dc143c;
-         color: white;
-         padding: 8px 15px;
-         display: flex;
-         width: 220px;
-         height: 71px;
+.tp-header-li--cart--bg{
+    background-color: $or;
+    color: white!important;
+    border: none;
+    width: auto;
+}
+.tp-header-h1{
+    color: $or!important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.sec-slogan{
+    font-family: 'Roboto', sans-serif;
+    padding: 28px 144px;
+}
+.sec-slogan-h3::before{
+    content: '"';
+    position: absolute;
+    font-weight: bolder;
+    color: $lb;
+    top: -15px;
+    left: -38px;
+    font-size: 34pt;
+    font-style: italic;
+}
+.sec-slogan-h3::after{
+    content: '"';
+    position: absolute;
+    font-weight: bolder;
+    color: $lb;
+    top: 36px;
+    right: -26px;
+    font-size: 34pt;
+    font-style: italic;
 
-         &:hover{
-             color: white;
-         }
-         &--i{
-             font-size: 40pt;
-             margin-right: 10px;
-         }
-         span{
-             display: block;
-             font-size: 15pt;
-             text-align: left;
-         }
-     }
-     &--googlebtn{
-        background-color:red;
-        color: white;
-        padding: 8px 15px;
-        display: flex;
-        width: 220px;
-        height: 71px;
+}
+.sec-slogan-h3{
+    color: $lb;
+    font-size: 25pt;
+    position: relative;
+    
+}
+.sec-slogan-name{
+    display: block;
+    text-align: right;
+    font-size: 14pt;
+    color: $or;
+    margin-top: 22px;
+}
+.sec-banner{
+    background-image:url('./10882/10882.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 448px;
+    color: $w;
+    padding: 45px 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.sec-banner-text{
+    font-size: 29pt;
+}
+.sec-banner-text--text2{
+    display: block;
+}
+.sec-banner-text--text3{
+    display: block;
+}
+.sec-banner-butn{
+    display: flex;
+}
+.sec-banner-butn-apple{
+    display: flex;
+    text-align: center;
+    background-color: $mar;
+    border-radius: 5px;
+    padding: -1px 17px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+    width: auto;
+    height: 75px;
+    color: $w;
+    margin-right: 20px;
 
-        &:hover{
-            color: white;
-        }
-        &--i{
-            font-size: 40pt;
-            margin-right: 10px;
-        }
-        span{
+    i{
+        font-size: 48pt;
+        margin-right: 10px;
+    }
+    &--dltext{
+        text-align: left;
+
+            span{
             display: block;
-            font-size: 15pt;
-            text-align: left;
+            font-size: 20pt;
+            font-weight: bold;
         }
     }
-  }
- 
-  .sec-meal-search{
-    //   border: 1px solid red;
+}
+.sec-banner-butn-google{
+    display: flex;
+    text-align: center;
+    background-color: $mar;
+    border-radius: 5px;
+    padding: 9px 17px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+    width: auto;
+    height: 75px;
+    color: $w;
+
+    i{
+        font-size: 42pt;
+        margin-right: 10px;
+    }
+    &--dltext{
+        text-align: left;
+
+            span{
+            display: block;
+            font-size: 20pt;
+            font-weight: bold;
+        }
+    }
+}
+
+.sec-meal{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: auto;
+    margin: 10px 0;
+}
+.sec-meal-search-settings{
     display: flex;
     justify-content: flex-end;
-    background-color: #EFF3F3;
-    margin: 3px 0;
-    height: 45px;
+    align-items: center;
+}
+.sec-meal-search{
+    display: flex;
+    align-items: center;
+    width: 440px;
+    height: 40px;
+    background-color: $lg;
     border-radius: 20px;
-    
-    
-    &--searchbtn{
-        background-color: transparent;
-        border: none;
-        width: 100%;
+    border: none;
+    margin-right: 30px;
 
-        
+    &--searchbtn{
+        margin-left: 30px;
+        border: none;
+        width: 370px;
+        background-color: transparent;
+
         &:focus{
             outline: none;
         }
+        &--icon{
+            top: 716px;
+            color: $mar;
+            font-size: 16pt;
+        }
+    }
+}
+.sec-meal-settings--seticon{
+    background-color: $or;
+    width: 50px;
+    height: 50px;
+    color: $w;
+    font-size: 16pt;
+
+    &:hover{
+        color: $w;
+    }
+}
+.sec-meal-title-h5{
+    color: $mar;
+    font-weight: bold;
+}
+.sec-popular-title-h5{
+    color: $mar;
+    font-weight: bold;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: $lg;
+        height: 2px;
+        width: 369%;
+        top: 11px;
+        left: 99px;
+
+    }
+}
+.sec-popular{
+    padding: 0 10px;
+    width: auto;
+    margin: 10px 0;
+}
+
+
+
+
+.sec-cat{
+    margin: 20px;
+}
+.sec-cat-butn{
+    background-color: $lg;
+    color: $lb;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin:10px 20px 10px 0;
+
+    &:hover{
+        background-color: $or;
+        color: $w;
+    }
+}
+.sec-gallery1-card{
+    border:1px solid $lg;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    height: auto;
+    margin: 15px auto;
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 240px;
+        border-top-left-radius:  20px;
+        border-top-right-radius:  20px;
     }
    
-  }
-  .sec-banner-slogan-h2{
-      position: relative;
-      left: 80px;
-    color: $b1;
-    font-family: 'Roboto', sans-serif;
-    font-size: 46px;
-      &::before{
-          content: '"';
-          font-size: 36pt;
-          position: absolute;
-          left:-55px;
+}
+.sec-gallery1-card--t1{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px 0 15px;
+    color: $mar;
+    position: relative;
+    
 
-      }
-      &::after{
-        content: '"';
-        font-size: 36pt;
-        position: absolute;
-        right: 110px;
-        bottom: 10px;
-    }
-    span{
-        color:orangered;
+    &::after{
+        content: '\f2e7';
+        font-family: "Font Awesome 5 Pro";
         font-size: 18pt;
-        font-weight: bolder;
-        display: block;
-        text-align: right;
-        margin: 16px 130px 0;
-        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        background-color: $mar;
+        color: $w;
+        text-align: center;
+        padding: 7px 0;
+        width: 50px;
+        height: 50px;
+        top: -63px;
+        border-radius: 30px;
     }
-  }
- 
-  .sec-meal-search--searchbtn--icon{
-      font-size: 18pt;
-      margin: 10px;
-  }
- .sec-meal-title{
-     margin: 10px 0;
+}
+.sec-gallery1-card--t2{
+    display: flex;
+    padding: 10px 15px;
 
-     &-h3{
-         color: $redpink;
-     }
- }
- .popular{
-     position: relative;
+    &--str{
+        margin-right: 15px;
+        color: $or;
 
-     &:after{
-          content: '';
-         position: absolute;
-         height: 2px;
-         right: 0;
-         width: 90%;
-         top: 45%;
-         background-color:lightgray;
-     }
-     h3{
-         color: $redpink;
-     }
- }
- .cat-meal{
-     margin: 10px 0;
-     padding: 15px 0;
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     
- }
- .butn{
-     background-color: #EFF3F3;
-     border-radius: 20px;
-     padding: 10px 20px;
-     
-     margin-right: 25px;
-     &:hover{
-         background-color: orangered;
-         color: white;
-     }
- }
- .sec-meal-settings--seticon{
-     &:hover{
-         color: white;
-     }
- }
-  .sec-meal{
-      margin: 20px 0;
-      padding: 11px 0;
-      height: 75px;  
-      
-     &-settings{
-
-      button{
-          background-color: orangered;
-          width: 50px;
-          height: 50px;
-          border-radius: 25px;
-          color: white;
-          font-size: 18pt;
-      }
-     }
-  }
-  .men-gallery1-card{
-      border-radius: 20px;
-      border: 1px solid lightgray;
-      height: 350px;
-      img{
-          width: 100%;
-          height: 230px;
-          border-top-left-radius: 20px;
-          border-top-right-radius: 20px;
-      }
-  }
-  .t1{
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 10px 3px;
-      color: $redpink;
-      margin: 5px 0;
-  }
-  .t2{
-      display: flex;
-      padding: 0 10px;
-        margin-bottom: 10px;
-       
-      &-str{
-          color:$orangered;
-
-          i:last-child{
+        i:last-child{
             opacity: 24%;
             margin-right: 15px;
           }
-      }
-      
-      
-  }
-  .t3{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px 5px 10px;
-
-}
-.cntry{
+    }
     span{
-        margin-right: 10px;
-        background-color:  #EFF3F3;
-        padding: 5px 15px;
-        border-radius: 20px;
-        margin-bottom: 10px;
+        color: $lb;
     }
 }
-.popular{
-    margin: 20px 0;
-}
-.gal-botm{
-    margin-bottom: 100px;
+.sec-gallery1-card--t3{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    &--cntry{
+       
+        span{
+            background-color: $lg;
+            padding: 5px 8px;
+            border-radius: 10px;
+            margin-right: 10px;
+            color:$lb;
+        }
+
+    }
+    &--time{
+        color: $lb;
+    }
+   
 }
