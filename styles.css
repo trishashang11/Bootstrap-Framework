@@ -58,18 +58,18 @@ li:last-child a:hover::after {
   padding: 28px 144px;
 }
 
-.sec-slogan-h3::before {
+.sec-slogan::before {
   content: '"';
   position: absolute;
   font-weight: bolder;
   color: #2E4765;
-  top: -15px;
-  left: -38px;
+  top: 99px;
+  left: 20%;
   font-size: 34pt;
   font-style: italic;
 }
 
-.sec-slogan-h3::after {
+.sec-slogan::after {
   content: '"';
   position: absolute;
   font-weight: bolder;
@@ -101,7 +101,17 @@ li:last-child a:hover::after {
   border-radius: 20px;
   height: 448px;
   color: #ffff;
-  padding: 45px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0 50px 50px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
@@ -122,24 +132,32 @@ li:last-child a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sec-banner-butn-apple {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   background-color: #B30733;
   border-radius: 5px;
-  padding: -1px 17px;
-  width: auto;
+  width: 48%;
   height: 75px;
   color: #ffff;
-  margin-right: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+.sec-banner-butn-apple:hover {
+  color: #ffff;
 }
 
 .sec-banner-butn-apple i {
-  font-size: 48pt;
+  font-size: 40pt;
   margin-right: 10px;
 }
 
@@ -149,7 +167,7 @@ li:last-child a:hover::after {
 
 .sec-banner-butn-apple--dltext span {
   display: block;
-  font-size: 20pt;
+  font-size: 15pt;
   font-weight: bold;
 }
 
@@ -188,18 +206,17 @@ li:last-child a:hover::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
-  width: auto;
-  margin: 10px 0;
+  padding: 0 10px;
+  margin: 15px 0;
 }
 
 .sec-meal-search-settings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -212,19 +229,29 @@ li:last-child a:hover::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 440px;
+  width: 85%;
   height: 40px;
   background-color: #d3d3d3;
   border-radius: 20px;
-  border: none;
-  margin-right: 30px;
+  position: relative;
+}
+
+.sec-meal-search::after {
+  content: '\f002';
+  position: absolute;
+  color: #B30733;
+  font-size: 16pt;
+  font-family: "Font Awesome 5 Pro";
+  right: 15px;
 }
 
 .sec-meal-search--searchbtn {
-  margin-left: 30px;
+  margin: 0 20px;
   border: none;
-  width: 370px;
+  width: 366px;
   background-color: transparent;
+  overflow: hidden;
+  padding-right: 20px;
 }
 
 .sec-meal-search--searchbtn:focus {
@@ -232,21 +259,28 @@ li:last-child a:hover::after {
 }
 
 .sec-meal-search--searchbtn--icon {
-  top: 716px;
   color: #B30733;
   font-size: 16pt;
 }
 
 .sec-meal-settings--seticon {
   background-color: #EF4C00;
-  width: 50px;
-  height: 50px;
   color: #ffff;
   font-size: 16pt;
+  margin-left: 15px;
 }
 
 .sec-meal-settings--seticon:hover {
   color: #ffff;
+}
+
+.sec-meal-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sec-meal-title-h5 {

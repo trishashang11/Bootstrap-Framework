@@ -13,11 +13,11 @@
         padding: 0 20px;
     }
     .sec-slogan-h3::before{
-        position: static;
+        /* position: static; */
     
     }
     .sec-slogan-h3::after{
-        position: static;
+        /* position: static; */
         
     }
     
@@ -28,6 +28,11 @@
     .sec-banner{
         background-size:auto;
         height: auto;
+        padding: 30px 50px;
+        
+    }
+    .br-butm{
+        padding-bottom: 10px;
     }
 }
 @media (max-width: 600px) {
@@ -71,3 +76,14 @@
         margin: auto;
     }
  } 
+ @media (max-width: 596px) {
+
+    .sec-banner-butn{
+        padding: 0 auto;
+    }
+    .sec-banner-butn-apple{
+        width: 100%;
+    }
+
+
+}

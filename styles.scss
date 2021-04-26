@@ -69,17 +69,17 @@ li:last-child{
     font-family: 'Roboto', sans-serif;
     padding: 28px 144px;
 }
-.sec-slogan-h3::before{
+.sec-slogan::before{
     content: '"';
     position: absolute;
     font-weight: bolder;
     color: $lb;
-    top: -15px;
-    left: -38px;
+    top: 99px;
+    left: 20%;
     font-size: 34pt;
     font-style: italic;
 }
-.sec-slogan-h3::after{
+.sec-slogan::after{
     content: '"';
     position: absolute;
     font-weight: bolder;
@@ -110,7 +110,10 @@ li:last-child{
     border-radius: 20px;
     height: 448px;
     color: $w;
-    padding: 45px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0 50px 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
@@ -125,20 +128,25 @@ li:last-child{
 }
 .sec-banner-butn{
     display: flex;
+    justify-content: space-between;
+    // border: 1px solid red;
+    
 }
 .sec-banner-butn-apple{
     display: flex;
-    text-align: center;
     background-color: $mar;
     border-radius: 5px;
-    padding: -1px 17px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
-    width: auto;
+    width: 48%;
     height: 75px;
     color: $w;
-    margin-right: 20px;
-
+    justify-content:center;
+    padding: 10px 0;
+    
+    &:hover{
+        color: $w;
+    }
     i{
-        font-size: 48pt;
+        font-size: 40pt;
         margin-right: 10px;
     }
     &--dltext{
@@ -146,7 +154,7 @@ li:last-child{
 
             span{
             display: block;
-            font-size: 20pt;
+            font-size: 15pt;
             font-weight: bold;
         }
     }
@@ -179,36 +187,49 @@ li:last-child{
 .sec-meal{
     display: flex;
     align-items: center;
-    padding: 10px 0;
-    width: auto;
-    margin: 10px 0;
+    padding: 0 10px;
+    margin: 15px 0;
+    // border: 1px solid red;
 }
 .sec-meal-search-settings{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    // border: 1px solid blue;
+    
 }
 .sec-meal-search{
     display: flex;
     align-items: center;
-    width: 440px;
+    width: 85%;
     height: 40px;
     background-color: $lg;
     border-radius: 20px;
-    border: none;
-    margin-right: 30px;
+    position: relative;
+   
+    &::after{
+        content: '\f002';
+        position: absolute;
+        color: $mar;
+        font-size: 16pt;
+        font-family: "Font Awesome 5 Pro";
+        right: 15px;
+
+    }
 
     &--searchbtn{
-        margin-left: 30px;
+        margin:0 20px;
         border: none;
-        width: 370px;
+        width: 366px;
         background-color: transparent;
+        overflow:hidden;
+        padding-right: 20px;
 
         &:focus{
             outline: none;
+            
         }
         &--icon{
-            top: 716px;
             color: $mar;
             font-size: 16pt;
         }
@@ -216,14 +237,17 @@ li:last-child{
 }
 .sec-meal-settings--seticon{
     background-color: $or;
-    width: 50px;
-    height: 50px;
     color: $w;
     font-size: 16pt;
+    margin-left: 15px;
 
     &:hover{
         color: $w;
     }
+}
+.sec-meal-title{
+   display: flex;
+   align-items: center;
 }
 .sec-meal-title-h5{
     color: $mar;
@@ -242,7 +266,6 @@ li:last-child{
         width: 369%;
         top: 11px;
         left: 99px;
-
     }
 }
 .sec-popular{
