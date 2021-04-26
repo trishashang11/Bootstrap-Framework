@@ -58,24 +58,28 @@ li:last-child a:hover::after {
   padding: 28px 144px;
 }
 
-.sec-slogan::before {
+.sec-slogan .slogan {
+  position: relative;
+}
+
+.sec-slogan .slogan::before {
   content: '"';
   position: absolute;
   font-weight: bolder;
   color: #2E4765;
-  top: 99px;
-  left: 20%;
+  top: -20px;
+  left: -54px;
   font-size: 34pt;
   font-style: italic;
 }
 
-.sec-slogan::after {
+.sec-slogan .slogan::after {
   content: '"';
   position: absolute;
   font-weight: bolder;
   color: #2E4765;
   top: 36px;
-  right: -26px;
+  right: -350px;
   font-size: 34pt;
   font-style: italic;
 }

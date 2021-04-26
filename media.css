@@ -1,3 +1,9 @@
+@media (max-width: 1400px) {
+    .sec-slogan .slogan::after{
+       right: -178px;
+        
+    }
+    }
 @media (max-width: 1200px) {
     li:nth-child(6)::after{
            display: none;     
@@ -12,14 +18,13 @@
     .sec-slogan-h3{
         padding: 0 20px;
     }
-    .sec-slogan-h3::before{
-        /* position: static; */
-    
-    }
-    .sec-slogan-h3::after{
-        /* position: static; */
-        
-    }
+    .sec-slogan .slogan::after{
+        right: -20px;
+     }
+     .sec-slogan .slogan::before{
+        left: -30px;
+     }
+   
     
     }
        
@@ -84,6 +89,12 @@
     .sec-banner-butn-apple{
         width: 100%;
     }
-
+    .sec-slogan .slogan::after{
+        position: static;
+     }
+     .sec-slogan .slogan::before{
+        position: static;
+        margin-right: 15px;
+     }
 
 }

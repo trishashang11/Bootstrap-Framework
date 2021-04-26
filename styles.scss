@@ -68,24 +68,27 @@ li:last-child{
 .sec-slogan{
     font-family: 'Roboto', sans-serif;
     padding: 28px 144px;
+    .slogan{
+        position: relative;
+    }
 }
-.sec-slogan::before{
+.sec-slogan .slogan::before{
     content: '"';
     position: absolute;
     font-weight: bolder;
     color: $lb;
-    top: 99px;
-    left: 20%;
+    top: -20px;
+    left: -54px;
     font-size: 34pt;
     font-style: italic;
 }
-.sec-slogan::after{
+.sec-slogan .slogan::after{
     content: '"';
     position: absolute;
     font-weight: bolder;
     color: $lb;
     top: 36px;
-    right: -26px;
+    right: -350px;
     font-size: 34pt;
     font-style: italic;
 
