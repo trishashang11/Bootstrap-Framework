@@ -352,6 +352,9 @@ li:last-child a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -379,7 +382,10 @@ li:last-child a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 15px;
+  padding: 0 15px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sec-gallery1-card--t2--str {
@@ -416,5 +422,85 @@ li:last-child a:hover::after {
 
 .sec-gallery1-card--t3--time {
   color: #2E4765;
+}
+
+.heart {
+  width: 8px;
+  height: 8px;
+  background-color: #B30733;
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.heart::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #B30733;
+  border-radius: 50%;
+  top: -6px;
+  left: 0px;
+}
+
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #B30733;
+  border-radius: 50%;
+  top: 0px;
+  right: -6px;
+}
+
+.gstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.star {
+  height: 0;
+  width: 0;
+  position: relative;
+  border-bottom: 7px solid #EF4C00;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.star::before {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 7px solid #EF4C00;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+  top: 1px;
+  left: -11px;
+}
+
+.star::after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 9px solid #EF4C00;
+  border-left: 3px solid transparent;
+  border-right: 4px solid transparent;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  top: -5px;
+  left: -7px;
+}
+
+.op {
+  opacity: 30%;
 }
 /*# sourceMappingURL=styles.css.map */

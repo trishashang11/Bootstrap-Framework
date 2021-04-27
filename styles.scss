@@ -313,6 +313,7 @@ li:last-child{
 }
 .sec-gallery1-card--t1{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 8px 15px 0 15px;
     color: $mar;
@@ -336,7 +337,8 @@ li:last-child{
 }
 .sec-gallery1-card--t2{
     display: flex;
-    padding: 10px 15px;
+    padding: 0 15px 10px;
+    align-items: center;
 
     &--str{
         margin-right: 15px;
@@ -371,4 +373,74 @@ li:last-child{
         color: $lb;
     }
    
+}
+
+.heart{
+    width: 8px;
+    height: 8px;
+    background-color: $mar;
+    position: relative;
+    transform: rotate(-45deg);
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: $mar;
+        border-radius: 50%;
+        top: -6px;
+        left: 0px;
+    }  
+    &::after{
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: $mar;
+        border-radius: 50%;
+        top: 0px;
+        right: -6px;
+    }  
+}
+
+.gstar{
+    display: flex;
+}
+.star{
+    height: 0;
+    width: 0;
+    position: relative;
+    border-bottom: 7px solid $or;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transform: rotate(35deg);
+
+    &::before{
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-bottom: 7px solid $or;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        transform: rotate(-70deg);
+        top:1px;
+        left: -11px;
+    }
+    &::after{
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-bottom: 9px solid $or;
+        border-left: 3px solid transparent;
+        border-right: 4px solid transparent;
+        transform: rotate(-35deg);
+        top: -5px;
+        left: -7px;
+    }
+}
+.op{
+    opacity: 30%;
 }
