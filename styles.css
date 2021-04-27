@@ -440,7 +440,7 @@ li:last-child a:hover::after {
   height: 8px;
   background-color: #B30733;
   border-radius: 50%;
-  top: -6px;
+  top: -5px;
   left: 0px;
 }
 
@@ -452,7 +452,7 @@ li:last-child a:hover::after {
   background-color: #B30733;
   border-radius: 50%;
   top: 0px;
-  right: -6px;
+  right: -5px;
 }
 
 .gstar {
